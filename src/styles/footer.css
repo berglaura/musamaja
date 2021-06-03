@@ -1,0 +1,42 @@
+.footer {
+    background-image: linear-gradient( #030303, #372e2e);
+    color: antiquewhite;
+    font-size: 2vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactDiv {
+    width: 33%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 812px) {
+    .footer {
+        font-size: 14px;
+    }
+    .contactDiv {
+        width: 48%;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .contactDiv2 {
+        width: 48%;
+        text-align: right;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 524px) {
+    .footer {
+        font-size: 12px;
+    }
+    .contactDiv {
+        padding-left: 5px;
+    }
+    .contactDiv2 {
+        padding-right: 5px;
+    }
+}

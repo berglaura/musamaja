@@ -1,0 +1,104 @@
+.navbar {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: #030303;
+}
+
+.navbar .leftSide {
+    flex: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.navbar .leftSide .logo {
+    text-align: left;
+    margin-right: 2vw;
+}
+
+.navbar .leftSide .links {
+    max-height: 80px;
+}
+
+.navbar .leftSide .links a {
+    --fill-color: orange;
+      position: relative;
+      padding: 4px 0;
+      font: 700 2.7vw Raleway, sans-serif;
+      text-shadow: none;
+      text-decoration: none;
+      margin-right: 2vw;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px var(--fill-color);
+      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+      color: transparent;
+      background-clip: text;
+      transition: 0.5s linear;
+    /* text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 2vw; */
+}
+
+.navbar .leftSide .links a:hover {
+    background-size: 100%;
+}
+
+
+.navbar .leftSide button {
+    display: none;
+    margin-left: 20px;
+}
+
+.navbar .leftSide #hidden {
+    display: flex;
+}
+
+.navbar .rightSide {
+    flex: 30%;
+
+}
+
+.navbutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    border-style: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+}
+
+.fa-bars {
+    color: orange;
+    font-size: 48px;
+}
+
+@media only screen and (max-width: 812px) {
+    .navbar .leftSide button {
+        display: flex;
+    }
+    .navbar .leftSide .links {
+        display: none;
+    }
+
+    .navbar .leftSide #hidden {
+        position: absolute;
+        left: 0px;
+        top: 80px;
+        height: 260px;
+        max-height: 260px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .leftSide #hidden a {
+        margin: 10px;
+        font-size: 4vw;
+    }
+
+}

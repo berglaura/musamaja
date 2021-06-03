@@ -1,0 +1,20 @@
+.musicDiv {
+    background-image: none;
+    background-color: black;
+    min-height: 1200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+/* lähteenä: 
+    https://fossheim.io/writing/posts/css-text-gradient/ */
+.gradient-text {
+    background-image: radial-gradient(rgb(235, 235, 22), rgb(223, 152, 21), rgb(161, 3, 3));
+    background-size:100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}

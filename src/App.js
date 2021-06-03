@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Firstpage from "./components/Firstpage";
+import Footer from "./components/Footer";
+import Pianokoulu from "./components/Pianokoulu";
+import Contact from "./components/Contact"
+import Musiikkiohjelma from './components/Musiikkiohjelma';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div className="app">
+          <Switch>
+            <Route exact path="/" component={Firstpage} />
+            <Route exact path="/pianokoulu" component={Pianokoulu} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/musiikkiohjelma" component={Musiikkiohjelma} />
+          </Switch>
+        </div>
+        <Footer />
+      </Router>   
   );
 }
 

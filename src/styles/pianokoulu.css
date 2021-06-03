@@ -1,0 +1,63 @@
+.pianokoulu {
+    background-image: url('../images/taustakuva2.jpeg');
+    background-size: 100%;
+    color: antiquewhite;
+    text-shadow: 0.4vw 0.4vw black;
+    font-size: 2vw;
+    width: auto;
+    padding: 8vw;
+    padding-top: 10vw;
+    text-align: center;
+}
+
+.notes {
+    margin-bottom: 5vw;
+}
+
+.img2 img {
+    max-width: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: none;
+    margin-top: 21vw;
+}
+
+.bd1 {
+    margin-top: 20vw;
+}
+
+.buttonDiv button {
+    background-image: linear-gradient(to bottom right, #ffff3c, #f56416, #fa0202);
+    color: black;
+    font-weight: bold;
+}
+
+.hinnasto,
+.lukukausi {
+    padding: 4vw;
+    padding-top: 10vw;
+    text-align: left;
+}
+
+.fa-music {
+    color: orange;
+    font-size: 5vw;
+}
+
+@media only screen and (max-width: 812px) {
+    .pianokoulu {
+        background-image: url('../images/taustakuvaPhone.jpeg');
+        font-size: 3vw;
+        padding: 4vw;
+        padding-top: 10vw;
+    }
+
+    .img2 img {
+        width: 100%;
+        margin-top: 15vw;
+    }
+
+    .bd1 {
+        margin-top: 10vw;
+    }
+}
