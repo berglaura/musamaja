@@ -26,10 +26,10 @@ export const Firstpage = () => {
             </div>
             <div className='buttons'>
                 <Link to="/pianokoulu"><button>Pianotunteja</button></Link>
-                <button>Musiikkiohjelmaa</button>
+                <Link to="/musiikkiohjelma"><button>Musiikkiohjelmaa</button></Link>
             </div>
             <div className="imgDiv">
-                <img src={`${process.env.PUBLIC_URL}/koskettimet.jpg`} alt="koskettimisto"/>
+                <img src="koskettimet.jpg" alt="koskettimisto"/>
             </div>
         </div>
 

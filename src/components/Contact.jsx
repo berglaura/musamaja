@@ -16,7 +16,7 @@ const Contact = () => {
           }}
           onInit={typewriter => {
             typewriter
-              .typeString('Ota yhteyttä!')
+              .typeString('Ota yhteyttä:')
               .pauseFor(2000)
               .start()
           }}

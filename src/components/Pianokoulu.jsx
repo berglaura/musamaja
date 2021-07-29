@@ -3,6 +3,7 @@ import '../styles/pianokoulu.css'
 import Popup from './Popup'
 import { useState } from 'react'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 const Pianokoulu = () => {
   const [buttonPopup, setButtonPopup] = useState(false)
@@ -36,7 +37,7 @@ const Pianokoulu = () => {
         </p>
 
         <figure className='img2'>
-          <img src={`${process.env.PUBLIC_URL}/laura1.jpg`} alt='Lauran kuva' />
+          <img src="laura1.jpg" alt='piano-ope Lauran kuva' />
         </figure>
         <p>
           Piano-opena Musamajassa toimin minä, Laura Berg, Helsingin
@@ -92,7 +93,7 @@ const Pianokoulu = () => {
         </div>
         <div className='buttonDiv bd2'>
           <p>Etsitkö elävää musiikkia juhliin?</p>
-          <button>Musiikkiohjelmaa</button>
+          <Link to="/musiikkiohjelma"><button>Musiikkiohjelmaa</button></Link>
         </div>
       </div>
     </>

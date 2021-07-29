@@ -5,6 +5,7 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
+    font-size: 2vw;
 }
 
 /* lähteenä: 
@@ -17,4 +18,51 @@
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+}
+
+.lesson {
+    padding: 4vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pictures {
+    margin-top: 3vw;
+}
+
+.pictures img {
+    width: 32%;
+    box-shadow: none;
+}
+
+.artist {
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 30%;
+}
+
+.image img {
+    box-shadow: none;
+}
+
+.about {
+    width: 70%;
+}
+
+@media only screen and (max-width: 812px) {
+    .musicDiv {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .pictures img {
+        border: none;
+    }
 }
